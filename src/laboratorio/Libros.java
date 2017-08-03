@@ -20,6 +20,7 @@ public class Libros extends javax.swing.JFrame {
      */
     int contador=0; 
     ArrayList lista= new ArrayList<>();
+    String nombre="";
     public Libros() {
         initComponents();
     }
@@ -215,23 +216,16 @@ public class Libros extends javax.swing.JFrame {
         // TODO add your handling code here: 
         String libros=campotexto.getText();      
         campotexto.setText("");
-//        Agregarlibros.addItem(libros);
+        Agregarlibros.addItem(libros);
         lista.add(libros);
         Collections.sort(lista);
         contador= contador+1;
         String contador1= String.valueOf(contador);
         cantidadtotal.setText(contador1);
-        for(int i=0;i< lista.size();i++){  
-            Agregarlibros.addItem(lista.get(i).toString());
-        }      
-        
-        
-           
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void AgregarlibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarlibrosActionPerformed
         // TODO add your handling code here:
-        String itemText = (String)Agregarlibros.getSelectedItem( );
         
     }//GEN-LAST:event_AgregarlibrosActionPerformed
 
