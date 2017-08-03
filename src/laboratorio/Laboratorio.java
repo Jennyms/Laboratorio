@@ -16,6 +16,9 @@ public class Laboratorio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Menu menu = new Menu();
+        menu.setLocationRelativeTo(null);
+        menu.setVisible(true);
     }
     
 }
